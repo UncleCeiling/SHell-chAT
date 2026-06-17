@@ -35,9 +35,9 @@
 
 > Well I'll try to comment my code as best as I can, but strategy-wise I'll get back to you on that...
 
-## What...
+## What\_
 
-### ...have you done so far?
+### \_have you done so far?
 
 1. Server can receive requests and establish connections.
 1. Clients can connect and send messages.
@@ -46,6 +46,32 @@
 1. Use config file to select host and port for server & client start-up.
 1. Make server fetch and display its own public IP.
 
-### ...needs doing?
+### \_needs doing?
 
 1. Make user input shared across clients. (May require tkinter and/or a full refactor)
+
+## How do I install it?
+
+> Are you sure?
+
+### 🏤 Server
+
+1. Make sure you have Docker installed.
+1. Clone this repo to a folder.
+1. Copy/Rename `server_config.json.sample` to `server_config.json`.
+1. Either port forward the Default Port - `54447` - or change `server_config.json` to contain a port you do have forwarded.
+   - Optionally give your server a name in `server_config.json`.
+1. Open the folder in your terminal and run `docker compose up`.
+1. Connect via the Client.
+1. Profit?
+
+### 💻 Client
+
+1. Make sure you have Python `3.13.5` or higher installed.
+1. Clone this repo.
+1. Copy/Rename `client_config.json.sample` to `client_config.json`.
+1. Make sure the details in `client_config.json` match the public IP and port of the server you want to join.
+1. Open a terminal in the folder with `client.py`.
+1. Run `pip install -r requirements.txt` in your terminal.
+1. Run `client.py`.
+1. Chat.
