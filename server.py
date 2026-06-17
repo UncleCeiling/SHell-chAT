@@ -69,6 +69,9 @@ if __name__ == "__main__":
                 port = port_in
             else:
                 print("Using Default Port.")
+            if name_in not in [None,""]:
+                server_name = name_in
+            print(f"Server Name: `{server_name}`")
     # Fall back on Defaults if we can't find/read the config file  
     except OSError as e:
         print(f"Couldn't load `server_config.json`. Using Defaults.\n{e}")

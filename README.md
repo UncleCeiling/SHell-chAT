@@ -48,6 +48,8 @@
 
 ### \_needs doing?
 
+1. Share server name with clients on join.
+1. Share current connections on join and leave.
 1. Make user input shared across clients. (May require tkinter and/or a full refactor)
 
 ## How do I install it?
