@@ -36,7 +36,7 @@ async def chat_handler(uri:str) -> None:
                     while True:
                         message = await asyncio.to_thread(input,f"{server_name}@{host} $ ")
                         # If they want to leave, let them.
-                        if message.lower in ["quit","exit"]:
+                        if message.lower() in ["quit","exit"]:
                             print("Closing Client")
                             exit(0)
                         # Otherwise send what they typed.
