@@ -1,4 +1,4 @@
-# **SH**ell ch**AT** (`shat` for short)
+# **SH**ell ch**AT** (`sh-at` for short)
 
 > An insecure, un-ergonomic, self-hosted chat app.
 
