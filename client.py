@@ -4,7 +4,7 @@ import websockets
 from websockets.asyncio.client import connect
 
 host = "localhost"
-port = 51147
+port = 54447
 shared_text = str()
 # This function handles the connection for the client
 async def chat_handler(uri:str) -> None:

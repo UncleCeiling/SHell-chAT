@@ -5,7 +5,7 @@ from requests import get
 from websockets.asyncio.server import serve
 
 host = "0.0.0.0"
-port = 51147
+port = 54447
 
 connections = set()
 
