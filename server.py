@@ -46,7 +46,7 @@ async def main():
 if __name__ == "__main__":
     # Get Configs from file.
     try:
-        with open("./server_config.json") as file:
+        with open("./data/server_config.json") as file:
             data = json.load(file)
             host_in,port_in = data["host"],data["port"]
             if host_in not in [None,""]:

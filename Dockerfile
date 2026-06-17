@@ -18,6 +18,8 @@ COPY requirements.txt ./
 RUN python3 -m pip install -r requirements.txt
 
 # copy files
+COPY ./client_config.json.sample ./data/client_config.json
+COPY ./server_config.json.sample ./data/server_config.json
 COPY . .
 
 # run the bot
