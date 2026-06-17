@@ -4,7 +4,7 @@ import websockets
 from requests import get
 from websockets.asyncio.server import serve
 
-host = "localhost"
+host = "0.0.0.0"
 port = 51147
 
 connections = set()
@@ -46,7 +46,7 @@ async def main():
 if __name__ == "__main__":
     # Get Configs from file.
     try:
-        with open("./data/server_config.json") as file:
+        with open("data/server_config.json") as file:
             data = json.load(file)
             host_in,port_in = data["host"],data["port"]
             if host_in not in [None,""]:
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             else:
                 print("Using Default Port.")
     except OSError as e:
-        print("Couldn't load `configs.json`. Using Defaults.")
+        print(f"Couldn't load `configs.json`. Using Defaults.\n{e}")
     finally:
         print(f"Host: {host}\nPort: {port}")
     ip = get("https://api.ipify.org").text

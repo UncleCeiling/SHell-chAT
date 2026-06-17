@@ -53,7 +53,7 @@ async def chat_handler(uri:str) -> None:
 # Main loop
 if __name__ == "__main__":# Get Configs from file.
     try:
-        with open("./data/client_config.json") as file:
+        with open("data/client_config.json") as file:
             data = json.load(file)
             host_in,port_in = data["host"],data["port"]
             if host_in not in [None,""]:
