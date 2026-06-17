@@ -1,4 +1,4 @@
-# **SH**ell ch**AT**
+# **SH**ell ch**AT** (`shat` for short)
 
 > An insecure, un-ergonomic, self-hosted chat app.
 
@@ -35,7 +35,9 @@
 
 > Well I'll try to comment my code as best as I can, but strategy-wise I'll get back to you on that...
 
-## What (have you done so far)?
+## What...
+
+### ...have you done so far?
 
 1. Server can receive requests and establish connections.
 1. Clients can connect and send messages.
@@ -44,6 +46,6 @@
 1. Use config file to select host and port for server & client start-up.
 1. Make server fetch and display its own public IP.
 
-## What (needs doing)?
+### ...needs doing?
 
 1. Make user input shared across clients. (May require tkinter and/or a full refactor)
