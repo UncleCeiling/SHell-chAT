@@ -1,0 +1,8 @@
+services:
+  shell_chat_server:
+    container_name: shell_chat
+    ports:
+      - "54447:54447"
+    build:
+      context: .
+    restart: no
